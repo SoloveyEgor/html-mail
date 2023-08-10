@@ -1,0 +1,202 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		[style*="Arial"] {font-family: 'Arial', sans-serif !important;}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+    
+		table td {
+			border-collapse: collapse;
+		}
+    
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+        .top {
+            height: 30px;
+            width: 100%;
+        }
+        .photo img {
+            margin-bottom: 16px;
+        }
+
+
+        .user_name, .mail_txt {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 23px;
+            color: #2D2D2D;
+        }
+
+        .mail_txt {
+            margin-top: 16px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 500;
+            cursor: pointer;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 32px;
+            padding-right: 32px;
+            background-color: #F1764A;
+            border-radius: 6px;
+        }
+
+        .btn  {
+            margin-top: 50px;
+            margin-bottom: 32px;
+        }
+
+        .bottom {
+            height: 48px;
+        }
+
+        @media (max-width: 767px) {
+            .user_name, .mail_txt, .btn {
+            width: 540px;
+            font-size: 17px;
+            }
+            
+            .user_name-size, .mail_txt-size {
+                font-size: 14px;
+            }
+
+            .top {
+                height: 30px;
+            }
+
+            .bottom {
+            height: 0px;
+        }
+        }
+
+        @media (max-width: 575px) {
+            .user_name, .mail_txt, .btn {
+            width: 370px;
+            font-size: 17px;
+            }
+
+            .btn  {
+            margin-top: 40px;
+            margin-bottom: 32px;
+        }
+        }
+
+        @media (max-width: 389px) {
+            .user_name, .mail_txt, .btn {
+            width: 300px;
+            font-size: 17px;
+            }
+            .bottom {
+            height: 12px;
+        }
+        }
+
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое письмо</div>
+
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+        <tr class="top">
+            <td></td>
+        </tr>
+
+        <tr align="center">
+            <td class="photo"><img src="https://www.buzynis.com/wp-content/uploads/2021/12/fitur-rsvp-undangan-pernikahan.jpg" alt="photo" width="300px"></td>
+        </tr>
+
+       <table class="user_name" cellpadding="0" cellspacing="0" width="634px" heigth="23px" align="center">
+            <tr>
+                <td>
+                    <p style=" font-family: Arial, Helvetica, sans-serif;font-weight: 400;font-size: 17px;line-height: 23px;color: #2D2D2D;margin: 0;">
+                        Hallo <span style="text-transform: uppercase;">%s %s</span>,
+                    </p>
+                </td>
+            </tr>
+       </table>
+
+       <table class="mail_txt" cellpadding="0" cellspacing="0" width="634px" bgcolor="#ffffff" align="center">
+            <tr>
+                <td>
+                    <p style=" font-family: Arial, Helvetica, sans-serif;font-weight: 400;font-size: 17px;line-height: 23px;color: #2D2D2D;margin: 0;">
+                        Vielen Dank, dass Sie sich bei Brötli Lieferservice angemeldet haben!
+                        Sie sind bei uns unter <span style="color: #F1764A;">%s</span> registriert. 
+                        Bitte verifizieren Sie sich zu lhrer Sicherheit Ihre E-Mail-Adresse, um zu bestätigen, dass dieses Konto Ihnen gehört.
+                        An diese Adresse werden wir Benachrichtigungen über Ihre Kontoaktivität bei Accountable senden.
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <table class="btn" cellpadding="0" cellspacing="0" width="634px" height="56px" bgcolor="#ffffff" align="center">
+            <tr>
+                <td>
+                    <a href="\%s%s\" target="_blank" style="text-decoration: none;font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: #ffffff;font-weight: 500;cursor: pointer;padding-top: 16px;padding-bottom: 16px;padding-left: 32px;padding-right: 32px;background-color: #F1764A;border-radius: 6px;margin: 0;">
+                        E-Mail Adresse bestätigen
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <table class="user_name user_name-size" cellpadding="0" cellspacing="0" width="634px" heigth="23px" bgcolor="#ffffff" align="center">
+            <tr>
+                <td>
+                    <p style=" font-family: Arial, Helvetica, sans-serif;font-weight: 400;font-size: 17px;line-height: 23px;color: #2D2D2D;margin: 0;">
+                        Mit freundlichen Grüßen<br>
+                        Ihr Brötli Team
+                    </p>
+                </td>
+            </tr>
+       </table>
+
+       <table class="mail_txt mail_txt-size" cellpadding="0" cellspacing="0" width="634px" bgcolor="#ffffff" align="center">
+            <tr>
+                <td>
+                    <p style=" font-family: Arial, Helvetica, sans-serif;font-weight: 400;font-size: 17px;line-height: 23px;color: #2D2D2D;margin: 0;">
+                    Sie haben diese E-Mail erhalten, weil Sie versucht haben, sich bei lhrer Brötli Account anzumelden. Wenn nicht, ignorieren Sie diese Nachricht einfach.
+                    </p>
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td></td>
+            </tr>
+        </table>
+
+	</table>
+</body>
+
+</html>
